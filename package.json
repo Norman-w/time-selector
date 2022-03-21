@@ -1,6 +1,6 @@
 {
   "name": "dragable-time-selector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A beautiful dragable react time selector with clock and number & am am",
   "main": "./src/index.jsx",
