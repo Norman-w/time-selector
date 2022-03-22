@@ -276,7 +276,6 @@ class TimeSelector extends Component {
   }
   componentDidMount() {
     if (!this.save.center) {
-      console.log('重新加载了');
       if (this.props.time)
       {
         this.setTime(this.props.time);
@@ -640,7 +639,7 @@ class TimeSelector extends Component {
         <div id={'文字形式的时间显示区域'} style={timeTextEditorRealStyle}>
           <div id={'小时显示的文字'} className={classes.hour}
                onClick={event => {
-                 console.log('点了小时显示文字');
+                 // console.log('点了小时显示文字');
                  setShowingSelector(showingSelector ==='hour'?null:'hour');
                }}
           >
@@ -652,7 +651,7 @@ class TimeSelector extends Component {
           </div>
           <div id={'分钟显示的文字'} className={classes.minute}
                onClick={event => {
-                 console.log('点了分钟,原来显示的是:', showingSelector)
+                 // console.log('点了分钟,原来显示的是:', showingSelector)
                  setShowingSelector(showingSelector ==='minute'? null:'minute');
                }}
           >{('' + time.minute).padStart(2, '0')}</div>
